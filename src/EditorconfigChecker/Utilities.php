@@ -46,7 +46,7 @@ class Utilities
      */
     public static function getBasePath(): string
     {
-        $basePath = sprintf("%s/../..", dirname(__FILE__));
+        $basePath = sys_get_temp_dir();
         return $basePath;
     }
 
